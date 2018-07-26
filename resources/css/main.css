@@ -1,0 +1,129 @@
+/* ---------------------------------------------------------- Main Page ------------------------------------------------------------*/
+
+.header {
+    background-image: url(/resources/images/background.jpg);
+    height: 105%;
+}
+
+.bg-color {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.navbar navbar-default navbar-fixed-top {
+    text-align: center;
+    position: fixed;
+    margin-bottom: 30px;
+}
+
+.bnr-para {
+    text-align: center;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+#toConvert,
+select,
+#myButton {
+    height: 45px;
+    width: 200px;
+    color: black;
+    margin: 30px 75px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+span {
+    width: 100%;
+    justify-content: center;
+}
+
+#rate {
+    height: 55px;
+    font-size: 40px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#myButton{
+    background-color: #fff;
+}
+
+#symbol,
+#convertedCurrency {
+    height: 55px;
+    font-size: 40px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*------------------------------------------------------------------------------------------------ MEDIA QUERY, MIN 768PX ----------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {}
+
+/*------------------------------------------------------------------------------------------------ MEDIA QUERY, MIN 768PX ----------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------ MEDIA QUERY, MIN 992PX ----------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-device-width: 992px) {
+
+
+    .header {
+        height: 105%;
+    }
+    
+    .bnr-para {
+    padding-top: 0;
+}
+
+    #toConvert,
+    select,
+    #myButton {
+        height: 45px;
+        width: 200px;
+        color: black;
+        margin: 30px 75px;
+        text-align: center;
+        justify-content: center;
+        background-color: 0;
+    }
+
+    
+    span {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /*
+    .results {
+        color: #000;
+        background-color: rgba(252, 252, 252, 1);
+        display: absolute;
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+*/
+    #rate {
+        height: 55px;
+        font-size: 40px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-top: 10px;
+        margin: 0;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------ MEDIA QUERY, MIN 992PX ----------------------------------------------------------------------------------------------------------------*/

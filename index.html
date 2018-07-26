@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+    <meta name="description" content="Currency Converter">
+    <meta name="keywords" content="currency, foreign exchange, exchange rates, bureau de change">
+
+
+    <!------ Favicon ----->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/resources/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/resources/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
+</head>
+
+<body>
+    <!---------------------------------------------------------- Main Page -------------------------------------------------------------->
+    <div class="loader"></div>
+    <div id="myDiv">
+        <!--HEADER-->
+        <div class="header">
+            <div class="bg-color">
+                <header id="main-header">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Currency<span class="logo-dec">Converter</span></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="banner-info text-center wow fadeIn delay-05s">
+                                <p class="bnr-para">Calculate live currency and foreign exchange rates with this free currency converter.</p>
+                                <input id="toConvert" type="number" placeholder="Enter Cash Amount">
+
+                                <select id="base">
+                        <option>Select Currency</option>
+                        <option class="firstCurrency" value="GBP">United Kingdom Pounds</option>
+                        <option class="firstCurrency" value="EUR">Euro</option>
+                        <option class="firstCurrency" value="USD">United States Dollars</option>
+                        <option class="firstCurrency" value="CAD">Canada Dollars</option>
+                        <option class="firstCurrency" value="JPY">Japan Yen</option>
+                        <option class="firstCurrency" value="CHF">Switzerland Francs</option>
+                      </select>
+                                
+                                <select id="target">
+                        <option>Select Currency</option>
+                        <option class="secondCurrency" value="GBP">United Kingdom Pounds</option>
+                        <option class="secondCurrency" value="EUR">Euro</option>
+                        <option class="secondCurrency" value="USD">United States Dollars</option>
+                        <option class="secondCurrency" value="CAD">Canada Dollars</option>
+                        <option class="secondCurrency" value="JPY">Japan Yen</option>
+                        <option class="secondCurrency" value="CHF">Switzerland Francs</option>
+                      </select>
+                                <button id="myButton">Convert</button>
+                                <span id="show" style="display:none;">
+                                <div class="results">
+                                    <p>The current market rate is: </p>
+                                    <!-- Placeholders -->
+                                    <span id="rate"></span>
+                                <div id="symbol"></div>
+                                <div id="convertedCurrency"></div>
+                            </div>
+                            </span>
+                            <footer id="footer">
+                                <div class="container">
+                                    <div class="row text-center">
+                                        <p>COPYRIGHTS MAX WATKINS. ALL RIGHTS RESERVED.</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/vendors/js/jquery.easing.min.js"></script>
+<script src="/vendors/js/bootstrap.min.js"></script>
+<script src="/vendors/js/wow.js"></script>
+<script src="/vendors/js/jquery.bxslider.min.js"></script>
+<script src="/vendors/js/custom.js"></script>
+<script src="resources/scripts/fixer.js"></script>
+
+</html>
